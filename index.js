@@ -4,6 +4,14 @@ function fetchBooks() {
   .then(data => {
     renderBooks(data);
   });
+  
+  fetch("string representing a URL to a data source")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json){
+    // Use this data inside of `json` to do DOM manipulation
+  })
 }
 
 function renderBooks(json) {
