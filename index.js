@@ -1,16 +1,10 @@
 function fetchBooks() {
-  fetch('https://anapioficeandfire.com/api/books')
-  .then(response => {return response.json()})
-  .then(data => {
-    renderBooks(data);
-  });
-  
-  fetch("string representing a URL to a data source")
+  fetch("https://anapioficeandfire.com/api/books")
   .then(function(response) {
     return response.json();
   })
-  .then(function(json){
-    // Use this data inside of `json` to do DOM manipulation
+  .then(function(data){
+    renderBooks(data)
   })
 }
 
